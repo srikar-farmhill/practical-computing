@@ -1,0 +1,82 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Practical Computing",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "GitHub.html",
+    "href": "GitHub.html",
+    "title": "2  GitHub",
+    "section": "",
+    "text": "2.1 Step 1: Create a new repository\nOpen the Github Desktop App and select ‘Create new repository’ as shown in the picture below.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>GitHub</span>"
+    ]
+  },
+  {
+    "objectID": "GitHub.html#step-1-create-a-new-repository",
+    "href": "GitHub.html#step-1-create-a-new-repository",
+    "title": "2  GitHub",
+    "section": "",
+    "text": "image.png",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>GitHub</span>"
+    ]
+  },
+  {
+    "objectID": "GitHub.html#step-2-give-your-repository-a-name-and-a-description",
+    "href": "GitHub.html#step-2-give-your-repository-a-name-and-a-description",
+    "title": "2  GitHub",
+    "section": "2.2 Step 2: Give your Repository a Name and a Description",
+    "text": "2.2 Step 2: Give your Repository a Name and a Description\nOnce you’ve completed the previous step, look at the image below.\n\n\n\nimage.png\n\n\nOne of the most important steps, if not the most important step, in creating any repository is giving it a name and a description. A name makes your repository unique, making it stand out from the rest. A description gives your repository a clear purpose as another means of identification.\nYou can’t create a repository unless you give it a name. You can leave out the description, but this is not a wise course of action, since the resulting repository will be difficult for you to find.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>GitHub</span>"
+    ]
+  },
+  {
+    "objectID": "Lassajous_curves.html",
+    "href": "Lassajous_curves.html",
+    "title": "3  Lassajous Curves",
+    "section": "",
+    "text": "Lassajous Curves are interesting mathematical curves that are generated using:\n\\(x = \\sin{(at + \\delta)}\\)\n\\(y = \\sin{(bt)}\\)\nAs an example, consider the below function when creating a lassajous curve:\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\n\ndef lassajous(a, b, delta):\n    t = np.linspace(0, 2*np.pi, 1000)\n    x = np.sin(a*t+delta)\n    y = np.sin(b*t)\n\n    plt.figure(figsize=(6, 6))\n    plt.plot(x, y)\n    plt.grid()\n    \n    # show delta as a fraction of pi\n    delta_fraction = delta/np.pi\n    plt.title(rf\"$\\delta={delta_fraction}\\pi, a={a}, b={b}$\")\n\n\nlassajous(1, 1, 0)\n\n\n\n\n\n\n\n\nLet’s try even higher values of delta, \\(a\\) and \\(b\\) and see what happens.\n\nlassajous(5, 7, np.pi)\n\n\n\n\n\n\n\n\nCool, no?\nFor further exploration, you may want to spend some time playing with the below interactive widget. it features sliders with which you can manipulate \\(a\\), \\(b\\) and delta as you wish. This in turn helps you find out different kinds of lassajous curve, which you may never have imagined! Have fun!\n\nfrom ipywidgets import interact, IntSlider, FloatSlider\n\ndef lassajous_curve(a, b, delta):\n    lassajous(a, b, delta*np.pi)\n\ninteract(lassajous_curve, \n         a=IntSlider(1, min=1, max=6),\n         b=IntSlider(1, min=1, max=6),\n         delta=FloatSlider(0, min=0, max=2, step=0.25, readout_format=\"0.2f\"))\n\n\n\n\n&lt;function __main__.lassajous_curve(a, b, delta)&gt;\n\n\nThe results you see may vary widely depending on how you change delta, \\(a\\) and \\(b\\). Sometimes, changing delta may have no visible effect, but the effect of changing delta is usually quite noticeable. By the way, did you notice thta, if \\(a\\)=\\(b\\), then you get a straight, slanting line? You may also get a shape of some sort which, if you look carefully, follows the trend of such a line.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Lassajous Curves</span>"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "4  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]
