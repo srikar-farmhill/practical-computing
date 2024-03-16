@@ -10,7 +10,7 @@ book:
     - intro.qmd
     - GitHub.ipynb
     - Lassajous_curves.ipynb
-    - How_to_create_a_quarto_book.ipynb
+    - how_to_create_a_quarto_book.ipynb
     - summary.qmd
     - references.qmd
 
