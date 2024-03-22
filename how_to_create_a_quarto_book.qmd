@@ -1,0 +1,14 @@
+# How to Create a Quarto Book
+
+1. Open Visual Studie Code. Write 'quarto create' in terminal.
+
+2. Select option 'project', then select option 'Book'.
+    When asked for directory, type '.' for current directory.
+
+3. Add chapters in file 'quarto.yml'. For each chapter, create a new file if there isn't one already.
+
+4. Put content in chapters. Save all changes.
+
+5. Add '_book' to gitignore and save. commit changes and puch in GitHub.
+
+6. Write 'quarto publish gh-pages' in terminal. Reply 'Y' to question.
