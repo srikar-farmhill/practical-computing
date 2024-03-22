@@ -1,14 +1,71 @@
 # How to Create a Quarto Book
 
-1. Open Visual Studio Code. Write 'quarto create' in terminal.
+## Part 1: Initial Setup
 
-2. Select option 'project', then select option 'Book'.
-    When asked for directory, type '.' for current directory.
+1. Open Visual Studio Code. Write `quarto create` in terminal.
 
-3. Add chapters in file 'quarto.yml'. For each chapter, create a new file if there isn't one already.
+```
+PS C:\Users\nandu\Documents\GitHub\practical-computing> quarto create
+...
+```
 
-4. Put content in chapters. Save all changes.
+2. Select option `project`.
 
-5. Add '_book' to gitignore and save. commit changes and puch in GitHub.
+```
+PS C:\Users\nandu\Documents\GitHub\practical-computing> quarto create
+ ? Create
+ ❯ project
+   extension
+```
 
-6. Write 'quarto publish gh-pages' in terminal. Reply 'Y' to question.
+3. Select project type as `book`.
+
+```
+PS C:\Users\nandu\Documents\GitHub\practical-computing> quarto create
+ ? Create » project
+ ? Type
+   default
+   website
+   blog
+   manuscript
+ ❯ book
+   confluence
+```
+
+4. When asked for directory, put name of desired directory, or `.` for current directory.
+
+```
+PS C:\Users\nandu\Documents\GitHub\practical-computing> quarto create
+ ? Create » project
+ ? Type » book
+ ? Directory » .
+
+Creating project at C:\Users\nandu\Documents\GitHub\practical-computing:
+  - Created _quarto.yml
+  - Created .gitignore
+  - Created index.qmd
+  - Created intro.qmd
+  - Created summary.qmd
+  - Created references.qmd
+  - Created cover.png
+  - Created references.bib
+```
+Quarto has now created sample files that you can immediately start working on.
+`_quarto.yml` is the configuration file for the quarto project.
+It contains the title of the book, the name of the author and a list of files for each chapter.
+All the `.qmd` files are the chapters of the book.
+
+## Part 2: Previewing Your Book
+
+## Part 3: Creating Content
+
+## Part 4: Publishing the Book as a Website
+
+## Part 5: Generating the PDF
+5. Add chapters in file 'quarto.yml'. For each chapter, create a new file if there isn't one already.
+
+6. Put content in chapters. Save all changes.
+
+7. Add '_book' to gitignore and save. commit changes and push in GitHub.
+
+8. Write 'quarto publish gh-pages' in terminal. Reply 'Y' to question.
