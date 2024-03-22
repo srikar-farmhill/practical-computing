@@ -1,6 +1,6 @@
 # How to Create a Quarto Book
 
-1. Open Visual Studie Code. Write 'quarto create' in terminal.
+1. Open Visual Studio Code. Write 'quarto create' in terminal.
 
 2. Select option 'project', then select option 'Book'.
     When asked for directory, type '.' for current directory.
