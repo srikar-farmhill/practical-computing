@@ -57,6 +57,22 @@ All the `.qmd` files are the chapters of the book.
 
 ## Part 2: Previewing Your Book
 
+write `quarto preview` in the terminal. You should get the below text.
+
+```
+Terminating existing preview server....DONE
+
+Preparing to preview
+
+Watching files for changes
+Browse at http://localhost:4062/
+GET: /
+GET: /how_to_create_a_quarto_book.html
+```
+Upon completion of this step, a tab will immediately open in your browser.
+It will contain the structure and contents to date of your quarto book.
+You can look at them at leisure.
+
 ## Part 3: Creating Content
 
 ## Part 4: Publishing the Book as a Website
